@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-label {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header-logo > a > img {
+    height: 20px;
+    width: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+li a {
+    text-align: center;
+    display: block;
+    width: 80px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.header-menu {
+    color: #000;
+    line-height: 1em;
+}
+
+.header-menu > span:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-menu > span:nth-child(3) {
+    font-size: 5px;
+}
+
+.header-button {
+    font-size: 12px;
+    height: 40px;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 999px;
+    
+}
+
+.orange-object {
+    color: #fff;
+    background-color: #f79214;
+}
+
+.hamburger {
+    display: none;
+}
+
+.top-wrapper {
+    height: auto;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.sm-top-image {
+    display: none;
+}
+
+.container {
+    width: 1080px;
+    margin:auto;
+    padding: 0 50px;
+    
+}
+
+.top-message {
+    width: fit-content;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.top-message > h2 {
+    font-size: 38px;
+    color:#333;
+    margin-bottom: 30px;
+}
+
+.top-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-images > img {
+    margin-right: 10px;
+}
+
+.top-images > img:first-child {
+    width: 30%;
+}
+
+.top-images > img:nth-child(2) {
+    width: 40%;
+}
+
+.top-images > img:nth-child(3) {
+    width: 30%;
+}
+
+.top-button {
+    margin: 20px 0px;
+}
+
+.top-councering {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 9999px;
+}
+
+.top-document {
+    display: inline-block;
+    color:#333 ;
+    font-weight: bold;
+    padding: 20px 30px;
+    text-decoration: none;
+    border :1px solid #e0e0e0;
+    border-radius: 9999px;
+    background-color: #fff;
+    
+}
+
+.top-note {
+    font-size: 12px;
+    color:#a2a2a4;
+}
+
+.top-note > p {
+    margin: 0px;
+}
+
+.intro-wrapper {
+    padding: 50px 0px;
+}
+
+.intro-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+video {
+    object-fit: contain;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.intro-text {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.intro-text > h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.intro-text > p {
+    font-size: 18px;
+}
+
+.intro-text > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hover:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.fixed-item {
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    z-index: 10;
+
+}
+
+.fixed-item > a > img {
+    max-width: 360px;
+}
+
+/*レスポンシブデザイン 1080px以下-----------*/
+@media screen and (max-width: 1080px){
+    .header-list {
+        display: none;
+    }
+    
+    .header-label {
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: #fff;
+
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        z-index: 20;
+        position: relative;
+    }
+    
+    .hamburger-line {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        border-radius: 999px;
+    }
+    
+    .hamburger-line:nth-child(2) {
+        top: 50%;
+    }
+    
+    .hamburger-line:nth-child(3) {
+        top: 100%;
+    }
+    
+    .top-wrapper {
+        padding-top: 60px;
+    }
+    
+    .container {
+        width: 984px;
+        margin: auto;
+        padding: 0 20px;
+        
+    }
+    
+    video {
+        width: 75%;
+        margin-right: 0;
+    }
+    
+    .intro-text {
+        width: 75%;
+    }
+}
+
+/*1024px以下--------------------------------*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 727px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    
+    .intro-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        object-fit: contain;
+    }
+    
+}
+
+/*767px以下------------------------*/
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0 20px;
+    }
+    
+    .top-wrapper {
+        background-image: none;
+        height: auto;
+    }
+    
+    .sm-top-image {
+        display: block;
+        width: 100%;
+    }
+    
+    .top-message {
+        width: 100%;
+        margin-top: -45vw;/*vw...100vw=画面幅px*/
+    }
+    
+    .top-message > h2 {
+        font-size: 25px;
+        
+    }
+    
+    .top-councering {
+        width: 100%;
+    }
+    
+    .top-document {
+        display: none;
+    }
+    
+    video {
+        width: 100%;
+    }
+    
+    .intro-text {
+        width: 100%;
+    }
+
+}
+
+/*428px以下--------------------*/
+@media screen and (max-width: 428px) {
+    .container {
+        max-width: none;
+        padding: 0 10px;
+    }
+    
+    .fixed-item {
+        background-color: #f4f5f7;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        
+    }
+    
+    .fixed-item > a > img {
+        margin: -4px auto 28px;
+        width: 98%;
+    }
+}
